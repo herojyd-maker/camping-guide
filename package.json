@@ -1,0 +1,10 @@
+{
+  "name": "camping-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "전국 캠핑장 안내 정적 사이트",
+  "scripts": {
+    "start": "npx -y http-server . -p 8765 -c-1",
+    "update": "node tools/update-campsites.js"
+  }
+}
