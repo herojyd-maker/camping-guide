@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>제작 과정 · 전국 캠핑장 안내</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 디자인 기준: DESIGN.md -->
+  <header class="top-nav">
+    <div class="wrap top-nav-inner">
+      <a class="wordmark" href="./index.html">캠핑장 안내</a>
+      <a class="nav-link" href="./index.html">캠핑장 찾기</a>
+    </div>
+  </header>
+
+  <main class="wrap workflow">
+    <h1>이 홈페이지는 이렇게 만들어졌습니다</h1>
+    <p class="hero-sub">MCP로 데이터를 모으고 확인했으며, 완성된 페이지는 LLM이나 MCP 없이 동작합니다.</p>
+
+    <section class="workflow-layout">
+      <div class="stage-box">
+        <div id="stage" class="stage" aria-hidden="true"></div>
+        <p id="stage-fallback" class="stage-fallback" hidden>이 브라우저에서는 3D 화면을 표시할 수 없습니다. 오른쪽 단계 설명을 참고해 주세요.</p>
+        <button id="toggle" type="button" class="btn-secondary stage-toggle">일시정지</button>
+      </div>
+      <ol id="steps" class="steps"></ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>3D 화면의 도형을 누르거나 단계 설명을 누르면 해당 단계로 이동합니다.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="js/workflow.js"></script>
+</body>
+</html>
